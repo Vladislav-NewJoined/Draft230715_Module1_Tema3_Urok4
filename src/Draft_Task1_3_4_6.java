@@ -1,93 +1,64 @@
 import java.util.Scanner;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП СДЕЛАН ОКОНЧАТЕЛЬНО, ОТПРАВЛЕН В ЭТОМ ВИДЕ !!!!!
-public class Draft_Task1_3_4_4 {
+public class Draft_Task1_3_4_6 {
     public static void main(String args[]) {
-        System.out.println("Задание: \n4.  Создайте класс, который находит наибольшее из трех чисел. " +
-                "\nКо всем переменным обращаться можно ТОЛЬКО используя this\n\nРешение: ");
+        System.out.println("Задание: \n6.  Создайте класс, который принимает аргументом, какую задачу " +
+                "\nон должен решить: “найти минимум из 2 чисел”, “найти сумму элементов " +
+                "\nмассива”, “вывести строку с конца”. На выходе этот класс пишет в консоль " +
+                "\nJava-код, который решает заданную задачу. Ко всем переменным обращаться " +
+                "\nможно ТОЛЬКО используя this.\n\nРешение: ");
         System.out.println("Ниже создан класс 'TaskDefinition'.");
-//        System.out.println("Можно обратиться без слова this. Ниже два примера, с this, и без this, но " +
-//                "без this в нашем случае результат будет null, т.е. некорректным.");
-//        Draft_Task1_3_4_6 s1 = new Draft_Task1_3_4_6();
-//        s1.result(max);
-//        s1.print();
-//    }
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.print("Please enter integer a: ");
-//        int a = scanner.nextInt();
-//        System.out.print("Please enter integer b: ");
-//        int b = scanner.nextInt();
-//        System.out.print("Please enter integer c: ");
-//        int c = scanner.nextInt();
-//
-//        int[] inputList = {a, b, c};
-//        int max = inputList[0];
-//
-//        for (int i = 0; i < inputList.length; i++) {
-//            if (max < inputList[i]) {
-//                max = inputList[i];
-//            }
-//        }
-//        System.out.println("The max number is: " + max);
 
-        TaskDefinition findMax = new TaskDefinition();
-        findMax.inputNumberOfTask();
+        TaskDefinition taskDefinition = new TaskDefinition();
+        taskDefinition.inputNumberOfTask();
 
-        findMax.printResult();
-//        void result (int max) {
-//            this.max = max;
-//        }
-//        void print () {
-//            System.out.println("With \"this\", name is: "/* + name*/);
-//        }
+        taskDefinition.printResult();
     }
 }
 
-class FindMax {
+class TaskDefinition {
     Scanner scanner = new Scanner(System.in);
-    //        System.out.print("Please enter integer a: ");
-//    int a = scanner.nextInt();
-//        System.out.print("Please enter integer b: ");
-//    int b = scanner.nextInt();
-//        System.out.print("Please enter integer c: ");
-//    int c = scanner.nextInt();
-//    int a = 3;
-//    int b = 8;
-//    int c = 5;
-    int[] inputList;/* = {a, b, c};*/
-    int max;/* = inputList[0];*/
+    int taskNum;
 
-    void inputIntegers() {
+    void inputNumberOfTask() {
+        System.out.println("Нумерация задач: " +
+                "\nЗадача 1.  Найти минимум из 2 чисел" +
+                "\nЗадача 2.  Найти сумму элементов массива" +
+                "\nЗадача 3.  Вывести строку с конца" +
+                "\n");
+
         this.scanner = scanner;
-        System.out.print("Please enter integer a: ");
-        int a = this.scanner.nextInt();
-        System.out.print("Please enter integer b: ");
-        int b = this.scanner.nextInt();
-        System.out.print("Please enter integer c: ");
-        int c = this.scanner.nextInt();
+        System.out.print("Введите номер задачи, от 1-го до 3-х: ");
+        int taskNumber = this.scanner.nextInt();
 
-//        this.a = a;
-//        this.b = b;
-//        this.c = c;
+        this.taskNum = taskNum;
 
-        this.inputList = new int[]{a, b, c};
-        this.max = max;
-
-//        for (int i = 0; i < inputList.length; i++) {
-//            if (max < inputList[i]) {
-//                max = inputList[i];
-        for (int i = 0; i < this.inputList.length; i++) {
-            if (this.max < this.inputList[i]) {
-                this.max = this.inputList[i];
-            }
+        if (taskNumber == 1) {
+            this.taskNum = 1;
+            System.out.println("Выбрана задача 1. Найти минимум из 2 чисел");
         }
-//        System.out.println("The max number is: " + this.max);
+        if (taskNumber == 2) {
+            this.taskNum = 2;
+            System.out.println("Выбрана задача 2. Найти сумму элементов массива");
+        }
+        if (taskNum == 3) {
+            this.taskNum = 3;
+            System.out.println("Выбрана задача 3. Вывести строку с конца");
+        }
 
 
     }
 
     void printResult() {
-        System.out.println("The max number is: " + this.max);
+        System.out.println("The max number is: null"/* + this.max*/);
+    }
+
+}
+
+class TaskImplementation {
+    void impTask1() {
+        System.out.println("The max number is: null"/* + this.max*/);
     }
 
 }
