@@ -30,7 +30,7 @@ public class Draft_Task1_3_4_4 {
 //        }
 //        System.out.println("The max number is: " + max);
 
-        FindMax2 findMax = new FindMax2();
+        FindMax findMax = new FindMax();
         findMax.inputIntegers();
 
         findMax.printResult();
@@ -43,7 +43,7 @@ public class Draft_Task1_3_4_4 {
     }
 }
 
-class FindMax2 {
+class FindMax {
     Scanner scanner = new Scanner(System.in);
     //        System.out.print("Please enter integer a: ");
 //    int a = scanner.nextInt();
@@ -105,7 +105,7 @@ class FindMax2 {
 //    public static void main(String args[]) {
 //        System.out.println("Задание: \n4.  Создайте класс, который находит наибольшее из трех чисел. " +
 //                "\nКо всем переменным обращаться можно ТОЛЬКО используя this\n\nРешение: ");
-//        System.out.println("Создан класс 'FindMax'.");
+//        System.out.println("Создан класс 'FindMax2'.");
 ////        System.out.println("Можно обратиться без слова this. Ниже два примера, с this, и без this, но " +
 ////                "без this в нашем случае результат будет null, т.е. некорректным.");
 ////        Draft_Task1_3_4_4 s1 = new Draft_Task1_3_4_4();
@@ -130,7 +130,7 @@ class FindMax2 {
 ////        }
 ////        System.out.println("The max number is: " + max);
 //
-//        FindMax findMax = new FindMax();
+//        FindMax2 findMax = new FindMax2();
 //        findMax.inputIntegers();
 //
 //        findMax.printResult();
@@ -183,7 +183,7 @@ class FindMax2 {
 //        }
 //        System.out.println("The max number is: " + max);
 //
-//        FindMax findMax = new FindMax();
+//        FindMax2 findMax = new FindMax2();
 //        findMax.inputIntegers();
 //
 //
