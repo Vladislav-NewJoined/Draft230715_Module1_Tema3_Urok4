@@ -6,7 +6,7 @@ public class Draft_Whole_Video1_3_4_0 {
         //  видео мин 09 34 - Этот метод существует толко у экземпляров класса
         //  видео мин 17 10 - Появилось слово this
         //  видео мин 19 22 - This это по сути указательный...
-        //  видео мин 25 46 - decreasePrice
+        //  видео мин 25 27 - decreasePrice
 
         Printer printer1 = new Printer();
         Printer printer2 = new Printer();
@@ -25,7 +25,12 @@ public class Draft_Whole_Video1_3_4_0 {
 //        printer2.myMethod();
 //        printer3.myMethod();
 
-        }
+        printer1.decreasePrice();
+        printer3.decreasePrice();
+        System.out.println(printer1);
+        System.out.println(printer3);
+
+    }
 
     static void printHello() {
         System.out.println("Hello");

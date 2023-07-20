@@ -12,4 +12,10 @@ public class Printer {
         System.out.println("My maker is " + this.maker);
         System.out.println("My price is " + this.price);
     }
+
+    void decreasePrice() {
+        this.price = this.price - 10;
+        System.out.println("My decreased price is " + this.price);
+
+    }
 }
