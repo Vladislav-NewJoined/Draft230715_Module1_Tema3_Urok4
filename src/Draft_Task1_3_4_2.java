@@ -1,6 +1,6 @@
 
-//        Пример _ ППППППППППППППППППППППППППППППППППП
-class Draft_Task1_3_4_2 {
+//        Пример _ ППППППППППППППППППППППППППППППППППП Этот пример использовал
+public class Draft_Task1_3_4_2 {
     String name;
 
     void result(String name) {
@@ -35,13 +35,65 @@ class Draft_Task1_3_4_2 {
 
 
 
+////        Пример 7 ППППППППППППППППППППППППППППППППППП Ещё один пример с this, не использовал
+//public class Draft_Task1_3_4_2 {
+//    public static void main(String[] args) {
+//        Human human1 = new Human();
+//        human1.setName("Volodya");
+//        human1.print();
+//    }
+//}
+//class Human {
+//    String name;
+//    public String getName() {
+//        return name;
+//    }
+//    public void setName(String name){
+//        this.name = name;
+//    }
+//    void print(){
+//        System.out.println("With 'this': " + name);
+//    }
+//}
+////        Конец Примера 7 КККККККККККККККК
 
 
 
 
 
-////        Пример 5 ППППППППППППППППППППППППППППППППППП Работает, но название класса Student
-//class Student {
+
+
+////        Пример 6 ППППППППППППППППППППППППППППППППППП Ещё один пример без this, не использовал
+//public class Draft_Task1_3_4_2 {
+//    public static void main(String args[]) {
+//        Human human1 = new Human();
+//        human1.setName("Volodya");
+//        human1.print();
+//    }
+//}
+//
+//class Human {
+//    String name;
+//    public String getName() {
+//        return name;
+//    }
+//            public void setName(String newName) {
+//                name = newName;
+//        }
+//        void print () {
+//            System.out.println("Without 'this': " + name);
+//    }
+//}
+////        Конец Примера 6 КККККККККККККККК
+
+
+
+
+
+
+
+////        Пример 5 ППППППППППППППППППППППППППППППППППП
+//class Draft_Task1_3_4_2 {
 //    String name;
 //
 //    void data(String name) {
@@ -54,7 +106,7 @@ class Draft_Task1_3_4_2 {
 //    }
 //
 //    public static void main(String args[]) {
-//        Student s1 = new Student();
+//        Draft_Task1_3_4_2 s1 = new Draft_Task1_3_4_2();
 //        s1.data("Alex");
 //        s1.disp();
 //    }
