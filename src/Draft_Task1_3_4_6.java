@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП СДЕЛАН ОКОНЧАТЕЛЬНО, ОТПРАВЛЕН В ЭТОМ ВИДЕ !!!!!
 public class Draft_Task1_3_4_6 {
@@ -12,8 +13,8 @@ public class Draft_Task1_3_4_6 {
 
         TaskDefinition taskDefinition = new TaskDefinition();
         taskDefinition.inputNumberOfTask();
-
         taskDefinition.printResult();
+//        taskDefinition.implementTask1();
     }
 }
 
@@ -36,28 +37,48 @@ class TaskDefinition {
 
         if (taskNumber == 1) {
             this.taskNum = 1;
-            System.out.println("Выбрана задача 1. Найти минимум из 2 чисел");
+            System.out.println("Выбрана задача 1. Найти минимум из 2 чисел" +
+                    "\nРешение задачи: ");
         }
         if (taskNumber == 2) {
             this.taskNum = 2;
-            System.out.println("Выбрана задача 2. Найти сумму элементов массива");
+            System.out.println("Выбрана задача 2. Найти сумму элементов массива" +
+                    "\nРешение задачи: ");
         }
         if (taskNum == 3) {
             this.taskNum = 3;
-            System.out.println("Выбрана задача 3. Вывести строку с конца");
+            System.out.println("Выбрана задача 3. Вывести строку с конца" +
+                    "\nРешение задачи: ");
         }
 
 
-    }
 
+
+
+
+
+
+
+
+
+//        void implementTask1() {
+            if (taskNum == 1) {
+                ArrayList<Integer> nums = new ArrayList<>();
+                nums.add(10);
+                nums.add(20);
+                System.out.print("Массив чисел: " + nums.toString() + "\n");
+
+                int min = nums.get(0);
+
+                for (int i = 1; i < nums.size(); i++) {
+                    if (nums.get(i) < min) {
+                        min = nums.get(i);
+                    }
+                }
+                System.out.println("Минимальное число: " + min);
+            }
+    }
     void printResult() {
-        System.out.println("The max number is: null"/* + this.max*/);
-    }
-
-}
-
-class TaskImplementation {
-    void impTask1() {
         System.out.println("The max number is: null"/* + this.max*/);
     }
 
