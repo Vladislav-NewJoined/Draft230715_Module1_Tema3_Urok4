@@ -49,16 +49,6 @@ class TaskDefinition {
                     "\nРешение задачи: ");
         }
 
-
-
-
-
-
-
-
-
-
-
         if (taskNum == 1) {
             ArrayList<Integer> nums = new ArrayList<>();
             nums.add(10);
