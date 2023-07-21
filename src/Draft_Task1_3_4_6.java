@@ -13,8 +13,6 @@ public class Draft_Task1_3_4_6 {
 
         TaskDefinition taskDefinition = new TaskDefinition();
         taskDefinition.inputNumberOfTask();
-        taskDefinition.printResult();
-//        taskDefinition.implementTask1();
     }
 }
 
@@ -45,7 +43,7 @@ class TaskDefinition {
             System.out.println("Выбрана задача 2. Найти сумму элементов массива" +
                     "\nРешение задачи: ");
         }
-        if (taskNum == 3) {
+        if (taskNumber == 3) {
             this.taskNum = 3;
             System.out.println("Выбрана задача 3. Вывести строку с конца" +
                     "\nРешение задачи: ");
@@ -61,29 +59,73 @@ class TaskDefinition {
 
 
 
-//        void implementTask1() {
-            if (taskNum == 1) {
-                ArrayList<Integer> nums = new ArrayList<>();
-                nums.add(10);
-                nums.add(20);
-                System.out.print("Массив чисел: " + nums.toString() + "\n");
+        if (taskNum == 1) {
+            ArrayList<Integer> nums = new ArrayList<>();
+            nums.add(10);
+            nums.add(20);
+            System.out.print("Массив чисел: " + nums.toString() + "\n");
 
-                int min = nums.get(0);
+            int min = nums.get(0);
 
-                for (int i = 1; i < nums.size(); i++) {
-                    if (nums.get(i) < min) {
-                        min = nums.get(i);
-                    }
+            for (int i = 1; i < nums.size(); i++) {
+                if (nums.get(i) < min) {
+                    min = nums.get(i);
                 }
-                System.out.println("Минимальное число: " + min);
             }
-    }
-    void printResult() {
-        System.out.println("The max number is: null"/* + this.max*/);
-    }
+            System.out.println("Минимальное число: " + min);
+        }
 
+        if (taskNum == 2) {
+            ArrayList<Integer> nums2 = new ArrayList<>();
+            nums2.add(1);
+            nums2.add(3);
+            nums2.add(5);
+            nums2.add(7);
+            System.out.print("Массив чисел: " + nums2.toString() + "\n");
+
+            int sum = 0;
+            for (int i = 0; i < nums2.size(); i++) {
+                sum = sum + nums2.get(i);
+            }
+            System.out.println("Сумма элементов массива: " + sum);
+        }
+
+        if (taskNum == 3) {
+            System.out.println("Исходная строка: \"Reverse String\"");
+            System.out.print("Строка с конца: \"");
+            String s = "Reverse String";
+            for (int i = s.length() - 1; i >= 0; i--) {
+            System.out.print(s.charAt(i));
+            }
+            System.out.print("\" + \n");
+        }
+    }
 }
 //        Конец Примера _ КККККККККККККККК
+
+
+
+
+
+
+
+////        Пример 4 ППППППППППППППППППППППППППППППППППП
+//public class Draft_Task1_3_4_6 {
+//    public static void main(String[] args) {
+//        System.out.println("Исходная строка: \"Reverse String\"");
+//        System.out.print("Строка с конца: \"");
+//        String s = "Reverse String";
+//        for (int i = s.length() - 1; i >= 0; i--) {
+//            System.out.print(s.charAt(i));
+//        }
+//        System.out.print("\"");
+//    }
+//}
+//
+////        Конец Примера 4 КККККККККККККККК
+
+
+
 
 
 

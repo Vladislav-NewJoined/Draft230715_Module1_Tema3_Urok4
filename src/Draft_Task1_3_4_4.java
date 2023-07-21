@@ -5,7 +5,7 @@ public class Draft_Task1_3_4_4 {
     public static void main(String args[]) {
         System.out.println("Задание: \n4.  Создайте класс, который находит наибольшее из трех чисел. " +
                 "\nКо всем переменным обращаться можно ТОЛЬКО используя this\n\nРешение: ");
-        System.out.println("Ниже создан класс 'TaskDefinition'.");
+        System.out.println("Для решения ниже создан класс 'FindMax'.");
 //        System.out.println("Можно обратиться без слова this. Ниже два примера, с this, и без this, но " +
 //                "без this в нашем случае результат будет null, т.е. некорректным.");
 //        Draft_Task1_3_4_6 s1 = new Draft_Task1_3_4_6();
@@ -30,8 +30,8 @@ public class Draft_Task1_3_4_4 {
 //        }
 //        System.out.println("The max number is: " + max);
 
-        TaskDefinition findMax = new TaskDefinition();
-        findMax.inputNumberOfTask();
+        FindMax findMax = new FindMax();
+        findMax.inputIntegers();
 
         findMax.printResult();
 //        void result (int max) {
